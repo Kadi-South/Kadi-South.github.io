@@ -1,44 +1,19 @@
-/* The Eternal Forge: CSS Stylesheet */
+.tagline { font-style: italic; color: #7f8c8d; }
 
-:root {
-    --fire: #b8860b;      /* Gold/Fire */
-    --shadow: #0a0a0a;    /* Deep Void */
-    --stone: #151515;     /* Structural Grey */
-    --blood: #8b0000;     /* Ancient Justice */
-    --text: #d1d1d1;      /* Worn Parchment */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #2c3e50;
+    font-weight: bold;
 }
 
-body {
-    background-color: var(--shadow);
-    color: var(--text);
-    font-family: 'Georgia', serif;
-    line-height: 1.8;
-    background-image: radial-gradient(circle at 50% 0%, #201505 0%, var(--shadow) 70%);
-}
+main { max-width: 800px; margin: 40px auto; padding: 0 20px; }
 
-header {
-    border-bottom: 2px solid var(--fire);
-    box-shadow: 0 4px 6px -2px var(--fire);
-}
+#hero { text-align: center; margin-bottom: 60px; }
+.services-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+.service-card { border: 1px solid #dcdcdc; padding: 20px; width: 250px; background: #fff; }
 
-h1, h2 {
-    color: var(--fire);
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+.legacy-content section { margin-bottom: 40px; }
+.legacy-content h2 { border-left: 5px solid #2c3e50; padding-left: 15px; }
 
-.pillar {
-    border: 1px solid var(--fire);
-    background: var(--stone);
-    transition: transform 0.3s ease;
-}
-
-.pillar:hover {
-    transform: translateY(-5px);
-    border-color: var(--blood);
-}
-
-footer {
-    color: var(--blood);
-    text-shadow: 0 0 5px var(--fire);
-}
+footer { text-align: center; padding: 40px; color: #7f8c8d; font-size: 0.9em; }
